@@ -9,10 +9,24 @@
         <title>Document</title>
     </head>
     <body>
-        <div>sinatest:: sinaweibo://</div>
+        <button onclick="openSinanews">打开新浪新闻</button>
+        <button onclick="openWeibo">打开微博</button>
+        <button onclick="openWeixin">打开微信</button>
+        <button onclick="openkuaishou">打开快手</button>
     </body>
     <script>
-        // window.location.href = 'sinaweibo://'
-        window.location.href = 'weibo://'
+        function openSinanews() {
+            window.location.href =
+                'sinanews://params=%7B%22id%22%3A%221893410897-70db285100100tyaq-cms-mp%22%2C%22dataid%22%3A%22comos%3Akmxzfmm1515903%22%7D::k=sinawap*k*wm3322*deeplink*1893410897-70db285100100tyaq-cms-mp*%7B%22ref%22%3A%22-%22%2C%20%22dataid%22%3A%22comos%3Akmxzfmm1515903%22%7D*scene2'
+        }
+        function openWeibo() {
+            window.location.href = 'weibo://'
+        }
+        function openWeixin() {
+            window.location.href = 'weixin://'
+        }
+        function openkuaishou() {
+            window.location.href = 'kwai://search?keyword=奇事'
+        }
     </script>
 </html>
